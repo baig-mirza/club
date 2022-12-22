@@ -52,35 +52,42 @@
         }
         /* founders section */ 
 
-        #founders 
+         #founders 
         {
-            padding: 7% 6%;
+            padding: 7% 10%;
             text-align: center;
             font-family: 'Montserrat', sans-serif;
         }
-       .box 
-       {
-            margin-top: 5%;
-            display: flex;
-            justify-content: space-between;
-       }
-       .column 
-       {
-            flex-basis: 31%;
-            background-color: #ff914d;
+        .aboutCol 
+        {
             border-radius: 10px;
-            margin-bottom: 5%;
-            padding: 20px 12px;
-            box-sizing: border-box;
-       }
-       .column:hover 
-       {
-            box-shadow: 0 0 20px 0;
-       }
-       .column-heading 
-       {
-            color: white;
-       }
+            color: black;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 3%;
+            margin-bottom: 2%;
+        }
+        .readMore
+            {
+                color: white;
+                border: 1px solid #fff;
+                padding: 15px 44px;
+                cursor: pointer;
+                font-size: 15px;
+                background-color: #f44336;
+                border-radius: 5px; 
+            }
+        .readMore:hover
+            {
+                border: 1px solid #f44336;
+                background-color: white;
+                transition: 1s;
+                color: black;
+            }
+            .breakForReadMore 
+            {
+                display: none;
+            }
        @media(max-width: 700px)
        {
             .box 
@@ -104,6 +111,14 @@
             {
                 background: url('images/gallipoli.webp') no-repeat center center;
                 background-size: cover;
+            }
+            #founders 
+            {
+                padding-top: 15%;
+            }
+            .breakForReadMore 
+            {
+                display: block;
             }
        }
        /* our work section */ 
@@ -236,25 +251,18 @@ style="fill:#000000;">
     </div>
 
     <section id="founders">
-        <h1>FOUNDERS</h1>
-        <p style="color: grey">Men who made Auburn Brothers Club possible.</p>
+        <h1>ABOUT US</h1>
 
-       <div class="box">
-        <div class="column">
-            <h3 class="column-heading">Naveed Mohammed</h3>
-            <p>Naveed Mohammed is the president and also one of the main people behind this amazing organisation. He has successfully organised many events for the Indian sub-continent migrants settled in Auburn and other suburbs of NSW.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col aboutCol">
+                    <p>Auburn Brothers Club is a incorporated organisation for migrants from Indian Subcontinent settled in Auburn and other suburbs of NSW, Australia. Urdu language as a mother-tongue is one of the binding forces of this community. It is a non-profit, social, community and cultural organization.</p> 
+                    <br> <br class="breakForReadMore">
+                    <a href="about us.html" class="readMore">Read More</a>
+                </div>
+                
+            </div>
         </div>
-
-        <div class="column">
-            <h3 class="column-heading">Imran Khan</h3>
-            <p>Imran Khan, the vice president of the Auburn Brothers Club, has been instrumental in assisting numerous Indian immigrants who have established themselves in NSW.</p>
-        </div>
-
-        <div class="column">
-            <h3 class="column-heading">Muzammil Siddiqui</h3>
-            <p>Muzammil Siddiqui is an excellent secretary for the Auburn Brothers Club and has consistently gone above and beyond to help the migrants from the Indian subcontinent who have settled in various regions of New South Wales.</p>
-        </div>
-       </div>
 
     </section>
 
